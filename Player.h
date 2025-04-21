@@ -5,7 +5,7 @@ class APlayer : public AActor
 public:
 	APlayer();
 	virtual ~APlayer();
-	virtual bool Move();
+	virtual void Move();
 	virtual void Tick() override;
 
 };

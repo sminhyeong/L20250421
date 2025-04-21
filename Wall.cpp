@@ -1,9 +1,5 @@
 #include "Wall.h"
 
-void AWall::Draw()
-{
-}
-
 AWall::AWall()
 {
 }

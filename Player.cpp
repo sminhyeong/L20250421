@@ -3,16 +3,17 @@
 
 APlayer::APlayer()
 {
-
+	X = 2;
+	Y = 2;
+	Shape = 'P';
 }
 
 APlayer::~APlayer()
 {
 }
 
-bool APlayer::Move()
+void APlayer::Move()
 {
-	std::cout << "Player Move" << std::endl;
 }
 
 void APlayer::Tick()

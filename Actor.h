@@ -1,14 +1,15 @@
 #pragma once
 class AActor
 {
-protected:
+public:
 	int X;
 	int Y;
 	char Shape;
-	virtual void Draw();
-public:
+
 	AActor();
 	virtual ~AActor();
 	virtual void Tick();
+	virtual void SetActorShape(char Shape);
+	virtual void SetActorLocation(int X, int Y);
 };
 

@@ -12,6 +12,13 @@ void AActor::Tick()
 {
 }
 
-void AActor::Draw()
+void AActor::SetActorShape(char Shape)
 {
+	this->Shape = Shape;
+}
+
+void AActor::SetActorLocation(int X, int Y)
+{
+	this->X = X;
+	this->Y = Y;
 }

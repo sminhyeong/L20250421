@@ -5,7 +5,9 @@ class AActor;
 class UWorld
 {
 protected :
+	bool IsRun;
 	std::vector<AActor*> Actors;
+	void GotoXY(int X, int Y);
 public :
 	UWorld();
 	virtual ~UWorld();
@@ -14,8 +16,10 @@ public :
 	{
 		return Actors;
 	}
-	void SpawnActor(AActor* soawnedActor);
+	void SpawnActor(AActor* spawnedActor, int X, int Y, char Shape);
 	void Run();
+	char Input();
+	void Rander(AActor* Actor);
 
 };
 

@@ -3,6 +3,9 @@
 
 ABoar::ABoar()
 {
+	X = 5;
+	Y = 5;
+	Shape = 'W';
 }
 
 ABoar::~ABoar()
@@ -11,7 +14,7 @@ ABoar::~ABoar()
 
 void ABoar::Move()
 {
-	std::cout << "boar" << std::endl;
+
 }
 
 void ABoar::Tick()
